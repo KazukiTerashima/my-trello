@@ -8,13 +8,13 @@
     <draggable group="cards" 
         :list="cards"
         @end="$emit('change')">
-    <card v-for="(item, index) in cards"
-        :body="item.body"
-        :key="item.id"
-        :cardIndex="index"
-        :listIndex="listIndex"
-    />
-    <card-add :listIndex="listIndex" />
+      <card v-for="(item, index) in cards"
+          :body="item.body"
+          :key="item.id"
+          :cardIndex="index"
+          :listIndex="listIndex"
+      />
+      <card-add :listIndex="listIndex" />
     </draggable>
   </div>
 </template>
