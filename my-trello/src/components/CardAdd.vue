@@ -15,6 +15,7 @@
     </button>
   </form>
 </template>
+
 <script>
 export default {
   props: {
